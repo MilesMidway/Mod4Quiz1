@@ -2,6 +2,8 @@ class Day
 {
     _day;
 
+    static days_array = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]; 
+
     constructor(day)
     {
         this.day = day;
@@ -32,8 +34,20 @@ class Day
 
     }
 
-    predictDay() // Zyd
+    predictDay(value) // Zyd
     {
-
+        let start = Day.days_array.indexOf(this.day);
+        let currentIndex = (start + value) % 7;
+        return Day.days_array[currentIndex];
     }
 }
+
+
+// Test Area 
+
+const day = new Day("Wednesday");
+
+//console.log(day.predictDay(5));
+
+
+
