@@ -31,7 +31,9 @@ class Day
 
     previousDay() // Nathaniel
     {
-
+        let previousDay = Day.days_array.indexOf(this.day);
+        if (previousDay > 1){previousDay -= 1;} else previousDay = 6;
+        return Day.days_array[previousDay];
     }
 
     predictDay(value) // Zyd
@@ -45,9 +47,9 @@ class Day
 
 // Test Area 
 
-const day = new Day("Wednesday");
+const day = new Day("Sunday");
 
-//console.log(day.predictDay(5));
+console.log(day.previousDay());
 
 
 
