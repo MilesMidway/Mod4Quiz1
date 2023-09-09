@@ -7,7 +7,7 @@ class Day
         this.day = day;
     }
 
-    set day(value)
+    set day(value) // Bryan
     {
         this._day = value;
     }
@@ -17,22 +17,22 @@ class Day
         return this._day;
     }
 
-    printDay()
+    printDay() // Mico
     {
 
     }
 
-    nextDay()
+    nextDay() // Matthew
     {
 
     }
 
-    previousDay()
+    previousDay() // Nathaniel
     {
 
     }
 
-    calculateDay()
+    predictDay() // Zyd
     {
 
     }
